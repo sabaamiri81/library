@@ -1,0 +1,28 @@
+.mainSection{
+    display:flex ;
+    align-items: flex-start;
+    justify-content: space-evenly;
+
+
+    &__filter{
+        background-color: rgb(247, 190, 119);
+        position: sticky;
+        top: 7%;
+        margin-top: 50px;
+        width: 15%;
+        border-radius: 15px;
+
+        &--dis{
+            display: none;
+        }
+    }
+
+    &__library{
+        width: 75%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        padding-top: 25px;
+    }
+}
