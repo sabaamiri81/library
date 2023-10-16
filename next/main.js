@@ -1,8 +1,8 @@
 
 function showAllBooks() {
-    let template = BOOKS.map((book) => {
-        const { id, title, author, published_date, language, genre, imgSrc } = book;
-        return `<div class="library__product">
+  let template = BOOKS.map((book) => {
+    const { id, title, author, published_date, language, genre, imgSrc } = book;
+    return `<div class="library__product">
         <img class="library__product--img" src="./image/${imgSrc}" alt="book picture">
 <div class="library__product--shadow">
   <h1 class="library__product--shadow--title">${title}</h1>
@@ -13,8 +13,8 @@ function showAllBooks() {
 </div>
 <button class="library__btn"  onclick="favorite(${id})">افزودن به کتاب های من</button>
       </div>`
-    })
-    library.innerHTML = template.join("")
+  })
+  library.innerHTML = template.join("")
 }
 
 
