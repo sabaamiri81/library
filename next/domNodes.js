@@ -1,8 +1,8 @@
 // arrays
 const favBooks =[]
-const filterWriter =[]
-const filterLang =[]
-const filterGenre =[]
+
+let uniqueGenres = [];
+
 
 
 // dom nodes
