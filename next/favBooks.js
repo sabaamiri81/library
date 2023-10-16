@@ -15,9 +15,9 @@ function removeBook(removeId) {
 function render() {
     let currLocation = location.pathname;
     switch (currLocation){
-        case "/": renderBooks(BOOKS);
+        case "/": showAllBooks(BOOKS);
             break;
-        case "/cart": renderCart();
+        case "/cart": favRender();
             break;
     }
    
@@ -47,3 +47,4 @@ function favRender() {
 
 
 basket.addEventListener("click", favRender)
+window.addEventListener("popstate", render);
